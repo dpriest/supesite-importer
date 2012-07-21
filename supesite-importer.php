@@ -271,7 +271,7 @@ class SS_API_Import extends WP_Importer {
 
 	function _create_DB_Conn_client() {
 		if ( !$this->DB_Conn ) {
-			$this->DB_Conn = mysql_connect('localhost', 'root', 'sushi');
+			$this->DB_Conn = mysql_connect('localhost', 'root', '');
 			mysql_select_db('online', $this->DB_Conn);
 		}
 	}
